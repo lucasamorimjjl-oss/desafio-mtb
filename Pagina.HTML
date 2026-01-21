@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio MTB – Venda do Quilombo</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    /* ===== BANNER RESPONSIVO ===== */
+    header {
+      position: relative;
+      min-height: 100vh;
+      background:
+        
+        url("banner site.JPEG") center center no-repeat;
+      background-size: contain;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+    }
+
+    /* ===== BOTÃO ===== */
+    .btn {
+      display: inline-block;
+      background: #f97316;
+      color: #020617;
+      padding: 15px 35px;
+      border-radius: 30px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ea580c;
+    }
+
+    /* ===== SEÇÕES ===== */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #f97316;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #22c55e;
+    }
+
+    ul {
+      max-width: 600px;
+      margin: auto;
+      line-height: 2;
+    }
+
+    /* ===== INSCRIÇÃO ===== */
+    #inscricao {
+      text-align: center;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* ===== RESPONSIVO MOBILE ===== */
+    @media (max-width: 768px) {
+      header {
+        background-size: cover;
+        min-height: 70vh;
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== BANNER ===== -->
+  <header>
+    <div>
+      <h1><br></h1>
+      <p></p>
+      <a href="#inscricao" class=""></a>
+    </div>
+  </header>
+
+  <!-- ===== INFORMAÇÕES ===== -->
+  <section>
+    <h2> Informações do Evento</h2>
+    <div class="cards">
+      <div class="card">
+        <h3> Data</h3>
+        <p>A definir</p>
+      </div>
+      <div class="card">
+        <h3> Local</h3>
+        <p>Venda do Quilombo<br>Itupeva – SP</p>
+      </div>
+      <div class="card">
+        <h3> Distâncias</h3>
+        <p>17km 400 ganho de elevação</p>
+      </div>
+      <div class="card">
+        <h3> Categorias</h3>
+        <p>Masculino / Feminino</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INCLUSO ===== -->
+  <section>
+    <h2> Regulamento </h2>
+    <ul>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+    </ul>
+  </section>
+
+  <!-- ===== INSCRIÇÃO ===== -->
+  <section id="inscricao">
+    <h2> Inscrição</h2>
+    <p>Garanta sua vaga e venha encarar esse desafio.</p>
+    <br>
+
+    <!-- LINK PAGBANK -->
+    <a 
+      href="https://pagamento.pagbank.com.br/pagamento?code=a1eb89cd-5cee-4119-a2e1-9a5871778e67&t=3226e6ac-e4e9-4170-95bc-c9788d7ca8f5" 
+      target="_blank"
+      class="btn"
+    >
+      Faça ja sua inscrição
+    </a>
+
+    <p style="margin-top:15px; font-size:14px;">
+      Pagamento seguro
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>📞 Dúvidas? Fale conosco pelo WhatsApp: (11) 97351-2665 </p>
+    <p>© 2026 – Desafio MTB Venda do Quilombo</p>
+  </footer>
+
+</body>
+</html>
